@@ -17,7 +17,7 @@ int main(int argc, char **argv)
    int destfd;
    off_t offset;
    uint8_t *buf;
-   size_t length;
+   ssize_t length;
 
    if (argc != 4) {
        fprintf(stderr, "Usage: %s device-or-image offset-in-sectors outputfile\n", argv[0]);
